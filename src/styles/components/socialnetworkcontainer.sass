@@ -1,0 +1,36 @@
+@use '../variables'
+@use '../mixins' 
+
+#social-networks
+    @include mixins.center
+    gap: 1rem
+    margin: 1rem 0
+
+    .social-btn
+        padding: .6em
+        background-color: variables.$bg-color-secondary
+        border: 0.1px solid #a6a6a6
+        border-radius: 1px
+        color: #333
+        font-size: 1.3rem
+        border-bottom-left-radius: 40%
+        border-top-right-radius: 40%
+        @include mixins.center
+
+    :hover
+        border-bottom-left-radius: 0
+        border-bottom-right-radius: 40%
+        border-top-right-radius: 0
+        border-top-left-radius: 40%
+
+    #linkedin
+        color: #0072b1
+        background: #9e9b9b
+
+    #github
+        color: #1a1919
+        background: #9e9b9b
+
+    #instagram
+        color: #fff
+        background: #9e9b9b
